@@ -49,7 +49,7 @@ section#about-me{
     font-size: 30px;}
         
     header > video{
-       position: fixed;
+       position: absolute;
        left: 0;
         top: 0;
        z-index: -1;
