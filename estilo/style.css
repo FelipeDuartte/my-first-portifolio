@@ -1,0 +1,69 @@
+@charset "UTF 8";
+@media screen and (max-width: 768px){
+/*cabeçalho principal*/
+header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 95vh;
+    color: #a9a9a9;}
+
+section.w100{
+width: 103vw;
+}
+
+
+p#presentation{
+top: 5px;
+font-size: small;}
+
+span#icons-glt{
+font-size: 20px;}
+    
+header > video{
+   position: fixed;
+   left: 0;
+    top: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+  object-fit: cover;
+}
+/*cabeçalho principal*/
+section#about-me{
+    background-image: linear-gradient(to bottom, #000000c0 2%,#9ca6a2 20%);
+    height: 650px;
+}
+}
+@media screen and (min-width: 768px){
+    header{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 95vh;
+        width: 100%;
+        color: #a9a9a9;}
+    
+    section.w100{
+    width: 100%;
+    }
+    
+    
+    p#presentation{
+    top: 5px;
+    font-size: small;}
+    
+    span#icons-glt{
+    font-size: 30px;}
+        
+    header > video{
+       position: fixed;
+       left: 0;
+        top: 0;
+       z-index: -1;
+       width: 100%;
+       height: 100%;
+      object-fit: cover;
+    }
+    /*cabeçalho principal*/
+    section#about-me{
+        background-image: linear-gradient(to bottom, #000000c0 2%,#9ca6a2 20%);
+        height: 650px;
+    }
+}
