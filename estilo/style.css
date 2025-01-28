@@ -14,11 +14,11 @@ body{
 
       section.w100{ 
         width: 100%;
-         box-shadow: 2px 2px 20px 3px black; } 
+        box-shadow: 2px 2px 20px 3px black; } 
 
       p#presentation{ 
         top: 5px;
-         font-size: 11px;} 
+        font-size: 11px;} 
 
       span#icons-glt{ 
         font-size: 20px;} 
@@ -32,7 +32,7 @@ body{
             height: 100%; 
             object-fit: cover; } 
 
-      /*cabeçalho principal*/ 
+      /*sobre mim*/ 
       section#about-me{
          background-image: linear-gradient(to bottom, #000000c0 2%,#9ca6a2 20%);
           height: 650px;
@@ -49,11 +49,13 @@ body{
          }
     } 
     @media screen and (min-width: 768px){
-         header{ 
+        header{ 
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; height: 97vh;
              width: 100%;
-              color: #a9a9a9;} 
-
+             color: #a9a9a9;} 
+            .size-developer{
+                font-size: 4.5em;
+            }
          section.w100{
              width: 100%; 
              box-shadow: 2px 2px 20px 3px black; } 
@@ -73,7 +75,7 @@ body{
               width: 100%; 
             height: 100%; 
               object-fit: cover;} 
-         /*cabeçalho principal*/ 
+         /*sobre mim*/ 
          section#about-me{ 
             background-image: linear-gradient(to bottom right, #000000fd 1%,#9CA6A2 60%); 
             min-height: 100%;
