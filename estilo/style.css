@@ -8,7 +8,7 @@ body{
      /*cabeçalho principal*/
       header{ 
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-        height: 95vh; 
+        height: 102vh; 
         width: 100%;
         color: #a9a9a9; } 
 
@@ -16,7 +16,7 @@ body{
         width: 100%;
         box-shadow: 2px 2px 20px 3px black; } 
 
-      p#presentation{ 
+      p#about-me{ 
         top: 5px;
         font-size: 11px;} 
 
@@ -33,12 +33,13 @@ body{
             object-fit: cover; } 
 
       /*sobre mim*/ 
-      section#about-me{
+      section.about-me{
          background-image: linear-gradient(to bottom, #000000c0 2%,#9ca6a2 20%);
-          height: 650px;
+          height: 100%;
+          width: 100%;
         }
 
-       #about-me > article > p{  
+        .about-me > article > p{  
          font-size: small;
          } 
 
@@ -47,11 +48,24 @@ body{
             left: 3px;
             color: grey;
          }
+         .hidden{
+          opacity: 0;
+          filter: blur(10);
+          transform: translateX(-100%);
+          transition: all 1s;
+         }
+         .show{
+          opacity: 1;
+          filter: blur(0px);
+          transform: translateX(0);
+          transition: all 1s;
+         }
     } 
     @media screen and (min-width: 768px){
         header{ 
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; height: 97vh;
              width: 100%;
+             height: 102vh;
              color: #a9a9a9;} 
             .size-developer{
                 font-size: 4.5em;
@@ -76,8 +90,29 @@ body{
             height: 100%; 
               object-fit: cover;} 
          /*sobre mim*/ 
-         section#about-me{ 
+         section.about-me{ 
             background-image: linear-gradient(to bottom right, #000000fd 1%,#9CA6A2 60%); 
             min-height: 100%;
              min-width: 100%;} 
+
+             .about-me > article > p{  
+              font-size: small;
+              } 
+              p#p-about-me{
+                top: 7px;
+                left: 3px;
+                color: grey;
+             }
+              .hidden{
+                opacity: 0;
+                filter: blur(10);
+                transform: translateX(-100%);
+                transition: all 1s;
+               }
+               .show{
+                opacity: 1;
+                filter: blur(0px);
+                transform: translateX(0);
+                transition: all 1s;
+               }
         }
