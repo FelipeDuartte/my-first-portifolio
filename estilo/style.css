@@ -38,7 +38,9 @@ body{
           height: 100%;
           width: 100%;
         }
-
+        article{
+          flex-direction: column;
+        }
         .about-me > article > p{  
          font-size: small;
          } 
@@ -94,6 +96,10 @@ body{
             background-image: linear-gradient(to bottom right, #000000fd 1%,#9CA6A2 60%); 
             min-height: 100%;
              min-width: 100%;} 
+
+             article{
+              flex-direction: column;
+            }
 
              .about-me > article > p{  
               font-size: small;
