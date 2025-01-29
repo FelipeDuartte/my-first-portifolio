@@ -36,14 +36,26 @@ header{
 
           .about-me > article > p{  
             font-size: small;
-            color: #F2E2C4;} 
-                         
-            p#p-about-me{
+            color: #F2E2C4;
+            transition-delay: 700ms;} 
+
+            #h1-about-me{
+              transition-delay: 400ms;
+              color: #F2CA99;}
+
+            #h2-about-me{
+              transition-delay: 700ms;
+              color: #f2ca999f;}
+
+            p#p1-about-me{
               top: 7px;
               left: 3px;
-              color: grey;}
+              color: grey;
+            transition-delay: 100ms;}
 
-              
+            p#p2-about-me{
+            transition-delay: 1s;}
+
               .hidden{
                 opacity: 0;
                 filter: blur(10);
