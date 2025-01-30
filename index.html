@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="./estilo/style.css">
     <title>My portifolio</title>
 </head>
-<body class="bg-black container-fluid d-flex p-0 align-items-center justify-content-center">
+<body class="container-fluid d-flex p-0 align-items-center justify-content-center">
+
+    <video autoplay loop muted playsinline class="p-0">  <!--video galaxia-->
+        <source src="video-img/video-header.mp4" type="video/mp4">
+        <source src="video-img/video-header.webm" type="video/webm">
+    </video>
 
 <header class="container-fluid d-flex flex-column align-items-center justify-content-center vh-100 p-0 row"> <!--cabeçalho principal--> 
 
@@ -22,7 +27,7 @@
             <p class="d-flex m-0 position-relative" id="presentation">Hi <span class="bi bi-emoji-wink-fill"></span>, my name is Felipe Duarte.</p>
                     
                 <div class="d-flex"> <!--div frontend e links das redes sociais-->
-                        <h2 class="col text-uppercase me-3 mb-0 display-4 fw-bold">Frontend</h2> <!--h2 Frontend-->
+                        <h2 class="col text-uppercase me-3 mb-0 display-4 fw-bold size-Frontend">Frontend</h2> <!--h2 Frontend-->
                                 <nav class="col d-flex align-items-center">
                                     <a href="" class=" text-white"><span class="bi bi-github me-2" id="icons-glt"></span></a>
                                     <a href="" class="text-primary"><span class="bi bi-linkedin me-2" id="icons-glt"></span></a>
@@ -34,28 +39,26 @@
 
             </div>
         </section>
-        <video autoplay loop muted playsinline class="p-0">  <!--video galaxia-->
-            <source src="video-img/video-header.mp4" type="video/mp4">
-            <source src="video-img/video-header.webm" type="video/webm">
-        </video>
         
 <span class="bi bi-arrow-down-short position-absolute d-flex align-self-end justify-content-center p-0" id="down-arrow"></span><!--icon seta para baixo-->
 
 </header> <!--cabeçalho principal-->
    
-    <section class="container-fluid d-flex align-items-center justify-content-center about-me">
-        <article class="container-fluid p-5 d-flex align-items-center justify-content-center">
+    <section class="container-fluid d-flex align-items-center justify-content-center p-0 about-me">
+        <article class=" d-flex align-items-center justify-content-center " id="article-about-me">
 
-            <div class="d-flex align-items-center justify-content-center hidden"><img src="video-img/my-picture.jpeg" alt="my-picture" class="img-fluid rounded-5 hidden" style="height: 250px;"></div>
+            <div>
+                <p class="fw-bold col-12 mt-3 mb-0 d-flex align-items-center justify-content-center hidden" id="p1-about-me">Conheça um pouco</p>
+                <h1 class="fw-bold text-uppercase col-12 d-flex align-items-center justify-content-center hidden" id="h1-about-me">Sobre mim</h1>
+            </div>
 
-    <p class="fw-bold col-12 m-0 position-relative d-flex align-items-center justify-content-center hidden" id="p1-about-me">Conheça um pouco</p>
+            <img src="video-img/my-picture.jpeg" alt="my-picture" class="img-fluid rounded-5 hidden img-about-me">
 
-            <h1 class="fw-bold text-uppercase col-12 m-0 d-flex align-items-center justify-content-center hidden" id="h1-about-me">Sobre mim</h1>
-
-                <h2 class="fs-6 fw-bold mt-5 d-flex align-items-center justify-content-center hidden" id="h2-about-me">Olá, me chamo Felipe Duarte</h2>
-
-                    <p class="text-center text-white hidden" id="p2-about-me">sou um desenvolvedor de software apaixonado por tecnologia e inovação. Tenho 18 anos e resido em Minas Gerais, tenho experiência em desenvolvimento web utilizando tecnologias como HTML, CSS, JavaScript, Bootstrap 5 e React.
-                    Meu foco é criar interfaces modernas, responsivas e eficientes, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias. Gosto de transformar ideias em soluções digitais funcionais e intuitivas.</p>
+            <div class="d-flex flex-column align-items-center hidden" id="div-about-me">
+                    <h2 class="fs-4 fw-bold d-flex hidden align-self-center" id="h2-about-me">Olá, me chamo Felipe Duarte</h2>
+                        <p class="fw-bold justify-content-center text-white hidden" id="p2-about-me">sou um desenvolvedor de software apaixonado por tecnologia e inovação. Tenho 18 anos e resido em Minas Gerais, tenho experiência em desenvolvimento web utilizando tecnologias como HTML, CSS, JavaScript, Bootstrap 5 e React.
+                        Meu foco é criar interfaces modernas, responsivas e eficientes, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias. Gosto de transformar ideias em soluções digitais funcionais e intuitivas.</p>
+                </div>
         </article>
     </section>
     <script src="script.js"></script>
