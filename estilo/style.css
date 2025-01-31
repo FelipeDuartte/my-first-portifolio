@@ -1,12 +1,17 @@
 @charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* Estilos para telas menores (mobile) */  
 body{
+  font-family: Arial, Helvetica, sans-serif;
     flex-direction: column; 
     padding: 0;
     margin: 0;}
 
 header{ 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  font-family: 'Kanit', Arial, Helvetica, sans-serif; 
   width: 100%;
   color: #a9a9a9; }
 
@@ -60,12 +65,15 @@ header{
             }
 
             .size-developer{
-              font-size: 3.1em;}
+              font-size: 3.1em;
+              color: transparent;
+              -webkit-text-stroke: 1.8px gray;
+              font-weight: 900;}
               
               p#presentation{ 
-              top: 5px; 
-              font-size: 0.79em;
-              font-weight: lighter;}
+              font-size: 0.8em;
+               font-weight: 500; 
+               top: 0.5em;}
               
               p#about-me{ 
               top: 5px;
@@ -94,12 +102,14 @@ header{
 @media screen and (min-width: 768px){
 
 .size-developer{
-font-size: 4.5em;}
-.size-Frontend{
-  font-size: 3.5em;}
+font-size: 6em;
+color: transparent;
+-webkit-text-stroke: 2px #A6A6A6;
+font-weight: 900;}
+
          p#presentation{ 
-            top: 1em; 
-            font-size: 1em;} 
+            top: 0.5em; 
+            font-size: 1.3em;} 
 
          span#icons-glt{ 
             font-size: 35px;} 
