@@ -4,11 +4,16 @@
 
 
 /* Estilos para telas menores (mobile) */  
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
     flex-direction: column; 
     padding: 0;
-    margin: 0;}
+    margin: 0;
+  height: 100%;}
 
 header{ 
   font-family: 'Kanit', Arial, Helvetica, sans-serif; 
@@ -21,7 +26,7 @@ header{
      top: 0;
       z-index: -1; 
       width: 100%;
-      height: 300vh; 
+      height: 450vh; 
       object-fit: cover;}  
 
       span#down-arrow{
@@ -41,7 +46,7 @@ header{
               top: 108%;}
 
             #h2-about-me{
-              transition-delay: 500ms;
+              transition-delay: 400ms;
               color: #f2ca999f;}
 
             p#p1-about-me{
@@ -51,7 +56,7 @@ header{
             transition-delay: 400ms;}
 
             p#p2-about-me{
-              transition-delay: 500ms;
+              transition-delay: 400ms;
               width: 98%;
               text-align: justify;
               line-height: 20px;
@@ -99,10 +104,16 @@ header{
               }
 
               div.card{
-               width: 33%;
-               margin: 8px;
-               background-color: #595959;
+               width: 100%;
+              padding: 0;
+                margin-bottom: 30px;
+               background-color:transparent ;
                color: #BFBFBF;
+              }
+
+              div > p.pjs{
+                font-weight: lighter;
+                font-size: small;
               }
 
               div.card:hover{
@@ -111,8 +122,8 @@ header{
               }
 
               .img-card{
-                height: 80px;
-                width: 80px;
+                height: 50px;
+                width: 50px;
               }
 
               .hidden{
