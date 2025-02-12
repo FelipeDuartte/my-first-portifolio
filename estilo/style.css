@@ -4,30 +4,34 @@
 
 
 /* Estilos para telas menores (mobile) */  
-html{
-  scroll-behavior: smooth;
-}
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column; 
-    padding: 0;
-    margin: 0;
-  height: 100%;}
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 header{ 
   font-family: 'Kanit', Arial, Helvetica, sans-serif; 
   width: 100%;
+  min-height: 100vh;
   color: #a9a9a9; }
 
   body > video{ 
-    position: absolute;
-     left: 0; 
-     top: 0;
-      z-index: -1; 
-      width: 100%;
-      height: 450vh; 
-      object-fit: cover;}  
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+
+  }  
 
       span#down-arrow{
         font-size: 2em;
@@ -46,7 +50,6 @@ header{
               top: 108%;}
 
             #h2-about-me{
-              transition-delay: 400ms;
               color: #f2ca999f;}
 
             p#p1-about-me{
@@ -56,7 +59,6 @@ header{
             transition-delay: 400ms;}
 
             p#p2-about-me{
-              transition-delay: 400ms;
               width: 98%;
               text-align: justify;
               line-height: 20px;
@@ -70,7 +72,7 @@ header{
             }
 
             .size-developer{
-              font-size: 3.1em;
+              font-size: 3em;
               color: transparent;
               -webkit-text-stroke: 1.8px gray;
               font-weight: 900;}
@@ -103,20 +105,20 @@ header{
               font-size: 2.9em;
               }
 
-              div.card{
+              div#divcard{
                width: 100%;
               padding: 0;
                 margin-bottom: 30px;
-               background-color:transparent ;
+                background-color: #26262625;
                color: #BFBFBF;
               }
 
-              div > p.pjs{
-                font-weight: lighter;
+              div > p.pcard{
+                font-weight: bold;
                 font-size: small;
               }
 
-              div.card:hover{
+              div#divcard:hover{
                 background-color: #262626;
                 color: white;
               }
@@ -126,17 +128,17 @@ header{
                 width: 50px;
               }
 
-              .hidden{
-                opacity: 0;
-                filter: blur(15);
-                transform: translateX(-100%);
-                transition: all 1s;}
+.hidden{
+opacity: 0;
+filter: blur(15px);
+transform: translateX(-100%);
+transition: all 0.8s ease-out;}
 
-               .show{
-                opacity: 1;
-                filter: blur(0px);
-                transform: translateX(0);
-                transition: all 1s;}
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);}
+
 /*Estilos para telas maiores*/
 @media screen and (min-width: 768px){
 
@@ -154,7 +156,7 @@ font-weight: 900;}
             font-size: 35px;} 
 
           section.about-me{
-            height: 100vh;
+            height: 108vh;
             width: 100%;
           }
           #article-about-me{
@@ -165,16 +167,7 @@ font-weight: 900;}
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
-          }
-
-         body > video{ 
-            position: absolute;
-             left: 0; 
-             top: 0;
-              z-index: -1; 
-              width: 100%;
-              height: 200vh; 
-              object-fit: cover;} 
+          } 
             
               p#p1-about-me{
                 top: 103%;
@@ -189,11 +182,11 @@ font-weight: 900;}
               
             }
 
-            .img-about-me{
-              height: 350px;
-              max-width: 23%;
+            .img-about-me {
+              width: 350px;   
+              height: 350px; 
               justify-content: start;
-              flex-shrink: 0;
+              flex-shrink: 0; 
               order: 1; 
               margin-right: 10%;
             }
@@ -206,5 +199,17 @@ font-weight: 900;}
                 line-height: 35px;
                 font-size: 1.2em;
               }
+
+              div#divcard{
+                width: 30%;
+                margin: 20px;
+                background-color: #26262625;
+              }
+
+              div > p.pcard{
+                font-weight: bold;
+                font-size: large;
+              }
+
 
             }
