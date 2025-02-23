@@ -108,7 +108,7 @@ header{
               div#divcard{
                width: 100%;
               padding: 0;
-                margin-bottom: 30px;
+                
                 background-color: #26262625;
                color: #BFBFBF;
               }
@@ -202,7 +202,7 @@ font-weight: 900;}
 
               div#divcard{
                 width: 30%;
-                margin: 20px;
+                margin: 20px 15px 20px 0px;
                 background-color: #26262625;
               }
 
