@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--link script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!--link icons bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link locais-->
+    <link rel="stylesheet" href="./estilo/style.css">
+    <title>My portifolio</title>
+    <video autoplay loop muted playsinline class="p-0">  <!--video galaxia-->
+        <source src="video-img/espace.mp4" type="video/mp4">
+    </video>
+
+</head>
+<body class="container-fluid d-flex p-0 align-items-center justify-content-center">
+
+<header class="container-fluid d-flex flex-column align-items-center justify-content-center vh-100 p-0 row"> <!--cabeçalho principal--> 
+
+    <section class="d-flex align-items-center justify-content-center p-0 m-0 w100">
+        <div>  
+            <p class="d-flex m-0 position-relative justify-content-center text-white " id="presentation">Opa ! <span class="bi bi-emoji-wink-fill"></span>, meu nome é</p>
+                    
+            <div><h1 class="col-12 m-0 size-developer">Felipe Duarte</h1></div>
+    
+                                <nav class="col d-flex align-items-center justify-content-center">
+                                    <a href="" class=" text-white"><span class="bi bi-github me-3" id="icons-glt"></span></a>
+                                    <a href="" class="text-primary"><span class="bi bi-linkedin me-3" id="icons-glt"></span></a>
+                                    <a href="" class="text-secondary"><span class="bi bi-tiktok" id="icons-glt"></span></a>
+                                </nav>
+                </div>  <!--div frontend e links das redes sociais-->
+
+            </div>
+        </section>
+        
+<span class="bi bi-arrow-down-short position-absolute d-flex align-self-end justify-content-center p-0" id="down-arrow"></span><!--icon seta para baixo-->
+
+</header> <!--cabeçalho principal-->
+   
+    <section class="container-fluid d-flex align-items-center justify-content-center p-0 about-me">
+        <article class=" d-flex align-items-center justify-content-center " id="article-about-me">
+
+            <div>
+                <p class="fw-bold col-12 mt-3 mb-0 d-flex align-items-center justify-content-center hidden" id="p1-about-me">Conheça um pouco</p>
+                <h1 class="fw-bold text-uppercase col-12 d-flex align-items-center justify-content-center hidden" id="h1-about-me">Sobre mim</h1>
+            </div>
+
+            <img src="video-img/my-picture.jpeg" alt="my-picture" class="img-fluid mb-4 mt-4 d-flex rounded-5 hidden img-about-me">
+
+            <div class="d-flex flex-column align-items-center hidden" id="div-about-me">
+                    <h2 class="fs-4 fw-bold d-flex hidden align-self-center" id="h2-about-me">Olá, me chamo Felipe Duarte</h2>
+                        <p class="fw-bold justify-content-center text-white hidden" id="p2-about-me">sou um desenvolvedor de software apaixonado por tecnologia e inovação. Tenho 18 anos e resido em Minas Gerais, tenho experiência em desenvolvimento web utilizando tecnologias como HTML, CSS, JavaScript, Bootstrap 5 e React.
+                        Meu foco é criar interfaces modernas, responsivas e eficientes, sempre buscando aprimorar minhas habilidades e aprender novas tecnologias. Gosto de transformar ideias em soluções digitais funcionais e intuitivas.</p>
+                </div>
+        </article>
+    </section>
+
+    <section class="d-flex p-0 text-center row container competencias mt-5">
+        <h1 class="p-0 mb-4 h1-competencia hidden">Competências</h1>
+
+    <div class="d-flex align-items-center card card-body hidden" id="divcard">
+      <img src="video-img/iconjs.png" alt="img-card" class="img-card">
+       <h6 class="fw-bold fs-5 mt-1">JavaScript</h6>
+       <p class="pcard">JavaScript é uma linguagem de programação usada principalmente para criar interatividade em páginas web. Ela permite adicionar funcionalidades dinâmicas, como animações e atualizações em tempo real, e é executada diretamente no navegador. Além disso, pode ser usada em servidores através do Node.js, tornando-se essencial no desenvolvimento web moderno.</p>
+    </div>
+
+    <div class="d-flex align-items-center card card-body hidden" id="divcard">
+        <img src="video-img/iconhtml.png" alt="img-card" class="img-card">
+       <h6 class="fw-bold fs-5 mt-1">HTML</h6>
+       <p class="pcard">HTML (HyperText Markup Language) é a linguagem de marcação usada para estruturar o conteúdo de páginas web. Ele define a estrutura básica, como títulos, parágrafos, imagens e links, utilizando tags específicas. O HTML é fundamental para criar a espinha dorsal de qualquer página da web, permitindo que os navegadores exibam o conteúdo corretamente.</p>
+      </div>
+
+      <div class="d-flex align-items-center card card-body hidden" id="divcard">
+        <img src="video-img/iconcss.png" alt="img-card" class="img-card">
+         <h6 class="fw-bold fs-5 mt-1">CSS</h6>
+         <p class="pcard">CSS (Cascading Style Sheets) é a linguagem usada para estilizar a aparência de páginas web. Com o CSS, é possível definir cores, fontes, layouts e outros aspectos visuais dos elementos HTML. Ele permite separar a estrutura do conteúdo (HTML) da sua apresentação, tornando o design das páginas mais flexível e organizado.</p>
+      </div>
+
+      <div class="d-flex align-items-center card card-body hidden" id="divcard">
+        <img src="video-img/iconbootstrap.png" alt="img-card" class="img-card">
+         <h6 class="fw-bold fs-5 mt-1">Bootstrap</h6>
+         <p class="pcard">Bootstrap é um framework front-end que facilita o desenvolvimento de sites e aplicativos web responsivos e com boa aparência. Ele oferece um conjunto de ferramentas prontas, como componentes de interface (botões, formulários, navegação) e estilos CSS, além de um sistema de grid para layouts flexíveis. Bootstrap economiza tempo e esforço, permitindo criar designs modernos e adaptáveis rapidamente.</p>
+      </div>
+
+      <div class="d-flex align-items-center card card-body hidden" id="divcard">
+        <img src="video-img/iconnodejs.png" alt="img-card" class="img-card">
+         <h6 class="fw-bold fs-5 mt-1">Node Js</h6>
+         <p class="pcard">Node.js é um ambiente de execução para JavaScript no lado do servidor. Ele permite que os desenvolvedores usem JavaScript para criar aplicações web escaláveis e de alto desempenho, como servidores e APIs. Baseado no motor V8 do Google Chrome, o Node.js é eficiente e ideal para lidar com muitas conexões simultâneas, sendo amplamente utilizado em sistemas de tempo real e aplicações de rede.</p>
+      </div>
+
+      <div class="d-flex align-items-center card card-body hidden" id="divcard">
+        <img src="video-img/iconreact.png" alt="img-card" class="img-card">
+         <h6 class="fw-bold fs-5 mt-1">React</h6>
+         <p class="pcard">React é uma biblioteca JavaScript para construir interfaces de usuário, especialmente em aplicações web. Desenvolvida pelo Facebook, ela permite criar componentes reutilizáveis que atualizam de forma eficiente a interface sempre que os dados mudam. O React facilita o desenvolvimento de aplicações interativas e dinâmicas, usando um modelo baseado em componentes e um fluxo de dados unidirecional.</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
