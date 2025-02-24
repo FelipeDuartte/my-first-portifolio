@@ -48,16 +48,16 @@ header{
             #h1-about-me{
               transition-delay: 400ms;
               color: #F2CA99;
-              top: 108%;}
+              top: 220%;}
 
             #h2-about-me{
               color: #f2ca999f;}
 
             p#p1-about-me{
               font-size: small;
-              top: 106%;
               color: grey;
-            transition-delay: 400ms;}
+            transition-delay: 400ms;
+            top: 215%;}
 
             p#p2-about-me{
               width: 98%;
@@ -171,7 +171,7 @@ font-weight: 900;}
           } 
             
               p#p1-about-me{
-                top: 103%;
+                top: 218%;
                 position: absolute;
                 align-items: center;
                 justify-content: center;
