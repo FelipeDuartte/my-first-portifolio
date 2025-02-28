@@ -42,13 +42,23 @@ header{
         height: auto;
       }
 
-      div#img-projeto{
-        width: 90%;
+      div#div-projeto{
+        width: 100%;
+      }
+
+      #img-projeto {
+        width: 95%;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+      }
+
+      #img-projeto:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); 
       }
 
       #projetos {
         position: relative;
-        padding-top: 80px; /* Ajusta o espaçamento superior */
+        padding-top: 80px; 
     }
     
     #projetos h1 {
@@ -135,10 +145,13 @@ header{
                 background-color: #26262625;
                color: #BFBFBF;
               }
-
               div > p.pcard{
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
-                font-size: small;
+                font-size: 1em;
+                width: 90%;
+                text-align: center;
+                
               }
 
               div#divcard:hover{
@@ -151,88 +164,97 @@ header{
                 width: 50px;
               }
 
-.hidden{
-opacity: 0;
-filter: blur(15px);
-transform: translateX(-100%);
-transition: all 0.8s ease-out;}
+              .hidden {
+                opacity: 0;
+                filter: blur(15px);
+                transform: translateX(-100%);
+                transition: all 0.8s ease-out;
+            }
+            
+            .show {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateX(0);
+            }
 
-.show{
-opacity: 1;
-filter: blur(0);
-transform: translateX(0);}
-
+            .pulse {
+              width: 200px;
+              height: auto;
+              animation: pulse 3.3s infinite;
+              transition: all 0.3s ease-in-out;
+          }
+          
+          @keyframes pulse {
+              0% {
+                  transform: scale(1);
+                  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+              }
+              50% {
+                  transform: scale(1.1);
+                  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+              }
+              100% {
+                  transform: scale(1);
+                  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+              }
+          }
+          
+          /* Parar animação no hover */
+          .pulse:hover {
+              filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+          }
 /*Estilos para telas maiores*/
 @media screen and (min-width: 768px){
 
-.size-developer{
-font-size: 6em;
-color: transparent;
--webkit-text-stroke: 2px #A6A6A6;
-font-weight: 900;}
-
-         p#presentation{ 
-            top: 0.5em; 
-            font-size: 1.3em;} 
-
-         span#icons-glt{ 
-            font-size: 35px;} 
-
-          section.about-me{
-            height: 108vh;
-            width: 100%;
-          }
-          #article-about-me{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-          } 
-            
-              p#p1-about-me{
-                top: 218%;
-                position: absolute;
-                align-items: center;
-                justify-content: center;
-              }
-
-              #h1-about-me{
-                position: absolute;
-                margin-bottom: 0;
+  .size-developer{
+  font-size: 6em;
+  color: transparent;
+  -webkit-text-stroke: 2px #A6A6A6;
+  font-weight: 900;}
+  
+           p#presentation{ 
+              top: 0.5em; 
+              font-size: 1.3em;} 
+  
+           span#icons-glt{ 
+              font-size: 35px;} 
+  
+            section.about-me{
+              height: 108vh;
+              width: 100%;
+            }
+            #article-about-me{
+              display: flex;
+              flex-wrap: wrap;
+              gap: 20px;
+              width: 100%;
+              align-items: center;
+              justify-content: space-between;
+              flex-direction: row;
+            } 
               
-            }
-
-            .img-about-me {
-              width: 350px;   
-              height: 350px; 
-              justify-content: start;
-              flex-shrink: 0; 
-              order: 1; 
-              margin-right: 10%;
-            }
-
-            #div-about-me{
-              flex: 1;}
-
-              p#p2-about-me{
-                width: 75%;
-                line-height: 35px;
-                font-size: 1.2em;
+                p#p1-about-me{
+                  top: 218%;
+                  position: absolute;
+                  align-items: center;
+                  justify-content: center;
+                }
+  
+                #h1-about-me{
+                  position: absolute;
+                  margin-bottom: 0;
+                
               }
-
-              div#divcard{
-                width: 30%;
-                margin: 20px 15px 20px 0px;
-                background-color: #26262625;
+  
+              .img-about-me {
+                width: 350px;   
+                height: 350px; 
+                justify-content: start;
+                flex-shrink: 0; 
+                order: 1; 
+                margin-right: 10%;
               }
-
-              div > p.pcard{
-                font-weight: bold;
-                font-size: large;
-              }
-
-
-            }
+  
+              #div-about-me{
+                flex: 1;}
+  }
