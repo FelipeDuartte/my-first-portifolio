@@ -40,30 +40,27 @@ header{
 
       section#projetos{
         height: auto;
+        font-family: 'Kanit', Arial, Helvetica, sans-serif; 
+          text-align: center;
+          
       }
 
-      div#div-projeto{
+      section > div > div > h2{
+        text-decoration: underline;
+        margin-bottom: -80px;
+        color: whitesmoke;
+        font-weight: bold;
+      }
+
+      .div-projeto{
         width: 100%;
       }
 
-      #img-projeto {
-        width: 95%;
+      img.img-projeto {
+        width: 100%;
+        height: auto;
         transition: transform 0.5s ease, box-shadow 0.3s ease;
       }
-
-      #projetos {
-        position: relative;
-        padding-top: 80px; 
-    }
-    
-    #projetos h1 {
-      font-family: 'Kanit', Arial, Helvetica, sans-serif; 
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-    }
 
         .about-me{
           height: 100vh; 
@@ -94,9 +91,9 @@ header{
             }
 
             .img-about-me{
-              height: 250px;
-              width: 60%; 
-              flex-shrink: 0;
+              max-width: 200px;
+              width: 80%; 
+              height: auto;
             }
 
             .size-developer{
