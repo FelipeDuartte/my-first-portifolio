@@ -2,102 +2,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* Estilos para telas menores (mobile) */  
-
 body{
   flex-direction: column;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  height: 100%; 
 }
 
+body > video{ 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;}  
+
+  /* começo Header */ 
 header{ 
   font-family: 'Kanit', Arial, Helvetica, sans-serif; 
   width: 100%;
   min-height: 100vh;
   color: #a9a9a9; }
 
-  body > video{ 
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    pointer-events: none;
+  p#presentation{ 
+    font-size: 0.8em;
+    font-weight: 500; 
+    top: 0.5em;}
 
-  }  
+  .size-developer{
+    font-size: 3em;
+    color: transparent;
+    -webkit-text-stroke: 1.8px gray;
+    font-weight: 900;}
+
+    span#icons-glt{ 
+    font-size: 23px;}  
 
       span#down-arrow{
-        font-size: 2em;
-        bottom: 5px;
-      }
+      font-size: 2em;
+      bottom: 5px;}
+/* Fim Header */
 
-      section#projetos{
-        height: auto;
-        font-family: 'Kanit', Arial, Helvetica, sans-serif; 
-          text-align: center;
-          
-      }
-
-      h2#projeto-gym {
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        background: linear-gradient(90deg, #172D40, #122640, #061426);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        animation: gradientMove 3s infinite linear;
-        letter-spacing: 2px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-        margin-bottom: -60px;
-    }
-
-    h2#projeto-fastfood {
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      background: linear-gradient(90deg, #E5D238, #C98808, #383643);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; 
-      animation: gradientMove 3s infinite linear;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-      margin-bottom: -60px;
-  }
-    
-    @keyframes gradientMove {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    
-        }
-      .div-projeto{
-        width: 100%;
-      }
-
-      img.img-projeto {
-        width: 90%;
-        height: auto;
-        transition: transform 0.5s ease, box-shadow 0.3s ease;
-      }
-
+/* começo Sobre mim */
         .about-me{
           height: 100vh; 
           width: 100%;
           background-color: #00000096;
         }
 
+        #article-about-me{
+          flex-direction: column;
+        }
+
+        p#about-me{ 
+          top: 5px;
+          font-size: 11px;}
 
             #h1-about-me{
               transition-delay: 400ms;
               color: #F2CA99;
               top: 220%;}
+
+              .img-about-me{
+                max-width: 200px;
+                width: 80%; 
+                height: auto;
+              }
 
             #h2-about-me{
               color: #f2ca999f;}
@@ -109,97 +81,97 @@ header{
             top: 215%;}
 
             p#p2-about-me{
-              width: 90%;
-              text-align: justify;
-              line-height: 20px;
+            width: 90%;
+            text-align: justify;
+            line-height: 20px;
             font-size: 0.8em;
             }
+/* Fim Sobre mim */
 
-            .img-about-me{
-              max-width: 200px;
-              width: 80%; 
-              height: auto;
-            }
+/* começo Projetos */
+      section#projetos{
+        height: auto;
+        font-family: 'Kanit', Arial, Helvetica, sans-serif;}
 
-            .size-developer{
-              font-size: 3em;
-              color: transparent;
-              -webkit-text-stroke: 1.8px gray;
-              font-weight: 900;}
-              
-              p#presentation{ 
-              font-size: 0.8em;
-               font-weight: 500; 
-               top: 0.5em;}
-              
-              p#about-me{ 
-              top: 5px;
-              font-size: 11px;} 
-              
-              span#icons-glt{ 
-              font-size: 23px;}  
-              
-              #article-about-me{
-                flex-direction: column;
-              }
-              
+      h2#projeto-gym {
+        background: linear-gradient(90deg, #172D40, #122640, #061426);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: gradientMove 3s infinite linear;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        margin-bottom: -60px;}
+
+    h2#projeto-fastfood {
+      background: linear-gradient(90deg, #E5D238, #C98808, #383643);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      animation: gradientMove 3s infinite linear;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      margin-bottom: -60px;}
+
+      .div-projeto{
+        width: 100%;
+      }
+
+      img.img-projeto {
+        width: 90%;
+        height: auto;
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+      }
+/* Fim Projetos */
+
+/* começo Competencias */
               section.competencias{
                 width: 100%;
-               height: 100%;
-              }
+               height: 100%;}
 
               .h1-competencia{
               color: transparent;
               -webkit-text-stroke: 1.6px #BFBFBF;
               font-weight: bold;
-              font-size: 2.9em;
-              }
+              font-size: 2.9em;}
 
               div#divcard{
-               width: 100%;
-              padding: 0;
-                
-                background-color: #26262625;
-               color: #BFBFBF;
-              }
-              div > p.pcard{
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bold;
-                font-size: 1em;
-                width: 90%;
-                text-align: center;
-                
-              }
+              width: 90%; 
+              background-color: #26262625;
+              color: #BFBFBF;}
 
               div#divcard:hover{
                 background-color: #262626;
-                color: white;
-              }
+                color: white;}
 
-              .img-card{
-                height: 50px;
-                width: 50px;
-              }
+                .img-card{
+                  height: 50px;
+                  width: 50px;}  
 
+            div > p.pcard{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 85%;
+            font-weight: bold;
+            text-align: center;
+            line-height: 20px;
+            font-size: 0.9em;}
+  /* Fim Competencias */
+
+  /* Animações */
               .hidden {
                 opacity: 0;
                 filter: blur(15px);
                 transform: translateX(-100%);
-                transition: all 0.8s ease-out;
-            }
+                transition: all 0.8s ease-out;}
             
             .show {
                 opacity: 1;
                 filter: blur(0);
-                transform: translateX(0);
-            }
+                transform: translateX(0);}
 
             .pulse {
               width: 200px;
               height: auto;
               animation: pulse 3.3s infinite;
-              transition: all 0.3s ease-in-out;
-          }
+              transition: all 0.3s ease-in-out;}
           
           @keyframes pulse {
               0% {
@@ -213,13 +185,7 @@ header{
               100% {
                   transform: scale(1);
                   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-              }
-          }
-          
-          /* Parar animação no hover */
-          .pulse:hover {
-              filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
-          }
+              } }  
 /*Estilos para telas maiores*/
 @media screen and (min-width: 768px){
 
