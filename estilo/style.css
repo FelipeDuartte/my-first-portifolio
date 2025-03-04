@@ -1,7 +1,6 @@
 @charset "UTF-8"; 
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* Estilos para telas menores (mobile) */  
 
   
@@ -51,7 +50,7 @@ header{
         .about-me{
           height: 110vh; 
           width: 100%;
-          background-color: #00000096;
+          background-color: #0000008a;
         }
 
         #article-about-me{
@@ -93,32 +92,44 @@ header{
 /* começo Projetos */
       section#projetos{
         height: auto;
-        font-family: 'Kanit', Arial, Helvetica, sans-serif;}
+        font-family: 'Kanit', Arial, Helvetica, sans-serif;
+        background-color: #0000008a;}
+
+        #projetos > h1{
+          margin: 50px 0px;
+          background-image: linear-gradient(90deg, #1B1F3B, #3D2C8D, #0A1128);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+          letter-spacing: 3px;
+          animation: glow 3s infinite alternate;
+        }
 
       h2#projeto-gym {
-        background: linear-gradient(90deg, #172D40, #122640, #061426);
+        background: linear-gradient(90deg, #0D1B2A, #1B263B, #415A77);
         background-clip: text;
+        background-size: 300% 300%;
+        animation: gradientShift 3s infinite alternate;
         -webkit-text-fill-color: transparent; 
-        animation: gradientMove 3s infinite linear;
         letter-spacing: 2px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-        margin-bottom: -60px;}
+        margin: 0px 0px -70px 0px;}
 
     h2#projeto-fastfood {
-      background: linear-gradient(90deg, #E5D238, #C98808, #383643);
+      background: linear-gradient(90deg, #F4A259, #D9480F, #9B2226);
+      animation: gradientShift 3s infinite alternate;
+      background-size: 300% 300%;
       background-clip: text;
       -webkit-text-fill-color: transparent; 
-      animation: gradientMove 3s infinite linear;
       letter-spacing: 2px;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-      margin-bottom: -60px;}
+      margin: 0px 0px -70px 0px;}
 
       .div-projeto{
-        width: 100%;
+        width: 95%;
       }
 
       img.img-projeto {
-        width: 95%;
+        width: 100%;
         height: auto;
         transition: transform 0.5s ease, box-shadow 0.3s ease;
       }
@@ -127,13 +138,14 @@ header{
 /* começo Competencias */
               section.competencias{
                 width: 100%;
-               height: 100%;}
+               height: 100%;
+               background-color: #0000008a;}
 
               .h1-competencia{
               color: transparent;
               -webkit-text-stroke: 1.8px gray;
               font-weight: 900;
-              font-size: 2.8em;}
+              font-size: 3em;}
 
               div#divcard{
               width: 34%; 
@@ -190,6 +202,20 @@ header{
                   transform: scale(1);
                   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
               } }  
+
+                @keyframes glow {
+                  from {
+                      text-shadow: 4px 4px 5px rgba(188, 226, 238, 0.185);
+                  }
+                  to {
+                      text-shadow: 2px 2px 5px transparent;
+                  }
+              }
+
+              @keyframes gradientShift {
+                0% { background-position: left; }
+                100% { background-position: right; }
+            }
 /*Estilos para telas maiores*/
 @media screen and (min-width: 800px){
 
