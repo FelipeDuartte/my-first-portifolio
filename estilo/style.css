@@ -129,9 +129,9 @@ header{
 
               .h1-competencia{
               color: transparent;
-              -webkit-text-stroke: 1.6px #BFBFBF;
-              font-weight: bold;
-              font-size: 2.9em;}
+              -webkit-text-stroke: 1.8px gray;
+              font-weight: 900;
+              font-size: 2.8em;}
 
               div#divcard{
               width: 90%; 
