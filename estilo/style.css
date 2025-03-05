@@ -171,51 +171,6 @@ header{
             font-size: 0.9em;}
   /* Fim Competencias */
 
-  /* Animações */
-              .hidden {
-                opacity: 0;
-                filter: blur(15px);
-                transform: translateX(-10%);
-                transition: all 0.8s ease-out;}
-            
-            .show {
-                opacity: 1;
-                filter: blur(0);
-                transform: translateX(0);}
-
-            .pulse {
-              width: 200px;
-              height: auto;
-              animation: pulse 3.3s infinite;
-              transition: all 0.3s ease-in-out;}
-          
-          @keyframes pulse {
-              0% {
-                  transform: scale(1);
-                  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-              }
-              50% {
-                  transform: scale(1.05);
-                  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
-              }
-              100% {
-                  transform: scale(1);
-                  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-              } }  
-
-                @keyframes glow {
-                  from {
-                      text-shadow: 4px 4px 5px rgba(188, 226, 238, 0.185);
-                  }
-                  to {
-                      text-shadow: 2px 2px 5px transparent;
-                  }
-              }
-
-              @keyframes gradientShift {
-                0% { background-position: left; }
-                100% { background-position: right; }
-            }
 /*Estilos para telas maiores*/
 @media screen and (min-width: 800px){
 
@@ -275,3 +230,81 @@ header{
                 font-size: 1.4em;
                 text-align: left;}
   }
+/* começo Projetos */
+    div.flex-row{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;}
+
+    .projeto-fastfood{
+      width: 40%;}
+
+    .projeto-gym{
+    width: 40%;}
+
+    #projetos > h1{
+      margin: 0px 0px 150px 0px;}
+/* Fim Projetos */
+
+/* começo Competencias */
+.h1-competencia{
+  margin: 20px 0px;
+font-size: 6em;}
+
+div#divcard{
+width: 15%;
+height: 330px;
+padding: 10px;} 
+
+div > p.pcard{
+width: 99%;
+line-height: 25px;
+font-size: 1em;}
+/* Fim Competencias */
+
+/* Animações */
+.hidden {
+  opacity: 0;
+  filter: blur(17px);
+  transform: translateX(-10%);
+  transition: all 0.9s ease-out;}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);}
+
+.pulse {
+width: 200px;
+height: auto;
+animation: pulse 3.3s infinite;
+transition: all 0.3s ease-in-out;}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
+}
+100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+} }  
+
+  @keyframes glow {
+    from {
+        text-shadow: 4px 4px 5px rgba(188, 226, 238, 0.185);
+    }
+    to {
+        text-shadow: 2px 2px 5px transparent;
+    }
+}
+
+@keyframes gradientShift {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
