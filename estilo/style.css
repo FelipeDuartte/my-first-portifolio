@@ -229,7 +229,7 @@ header{
                 flex: 1;
                 font-size: 1.4em;
                 text-align: left;}
-  }
+ 
 /* começo Projetos */
     div.flex-row{
       display: flex;
@@ -254,7 +254,7 @@ font-size: 6em;}
 
 div#divcard{
 width: 15%;
-height: 330px;
+height: auto;
 padding: 10px;} 
 
 div > p.pcard{
@@ -262,7 +262,7 @@ width: 99%;
 line-height: 25px;
 font-size: 1em;}
 /* Fim Competencias */
-
+}
 /* Animações */
 .hidden {
   opacity: 0;
