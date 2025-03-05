@@ -20,7 +20,7 @@ body > video{
   z-index: -1;
   pointer-events: none;}  
 
-  /* começo Header */ 
+/* começo Header */
 header{ 
   font-family: 'Kanit', Arial, Helvetica, sans-serif; 
   width: 100%;
