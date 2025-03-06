@@ -48,7 +48,7 @@ header{
 
 /* começo Sobre mim */
         .about-me{
-          height: 110vh; 
+          height: auto; 
           width: 100%;
           background-color: #0000008a;
         }
@@ -87,12 +87,24 @@ header{
             line-height: 25px;
             font-size: 0.8em;
             }
+
+            h3.h3-aboutme{
+              font-family: 'kanit';
+              padding-top: 10%;
+             font-weight: bold;
+             color: #0D1B2A;}
+
+            p.p-aboutme{
+              font-family: 'kanit' sans-serif;
+              color: #BFBFBF;
+              text-align: start;
+            }
 /* Fim Sobre mim */
 
 /* começo Projetos */
       section#projetos{
         height: auto;
-        font-family: 'Kanit', Arial, Helvetica, sans-serif;
+        font-family: 'Kanit';
         background-color: #0000008a;}
 
         #projetos > h1{
@@ -129,7 +141,7 @@ header{
       }
 
       img.img-projeto {
-        width: 100%;
+        width: 90%;
         height: auto;
         transition: transform 0.5s ease, box-shadow 0.3s ease;
       }
