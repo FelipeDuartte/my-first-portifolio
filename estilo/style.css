@@ -23,7 +23,6 @@ body > video{
 /* começo Header */
 header{ 
   font-family: 'Kanit', Arial, Helvetica, sans-serif; 
-  width: 100%;
   min-height: 100vh;
   color: #a9a9a9; }
 
@@ -169,18 +168,19 @@ header{
               color: transparent;
               -webkit-text-stroke: 1.8px gray;
               font-weight: 900;
-              font-size: 3em;}
+              font-size: 2.8em;}
 
               div#divcard{
-              width: 34%; 
-              margin: 20px 5px;
+              width: 24%; 
+              margin: 20px 5px 0px 5px;
               text-align: center;
               height: auto;
-              background-color: #141414;
+              background-color: transparent;
               color: #BFBFBF;}
 
               div#divcard:hover{
                 background-color: #262626;
+                transition: 1s;
                 color: white;}
 
                 .img-card{
@@ -188,13 +188,7 @@ header{
                   width: 50px;}  
 
             p.pcard{
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            font-weight: bold;
-            line-height: 20px;
-            font-size: 0.9em;}
-
-         
+              display: none;}
 
   /* Fim Competencias */
 
@@ -297,14 +291,15 @@ padding: 10px;}
     margin: 20px 5px;
     text-align: center;
     height: auto;
-    background-color: #141414;
     color: #BFBFBF;}
 }
 
 div > p.pcard{
+display: block;
 width: 99%;
 line-height: 25px;
-font-size: 1em;}
+font-size: 1em;
+font-weight: bold;}
 /* Fim Competencias */
 }
 /* Animações */
