@@ -1,28 +1,20 @@
 
-const myObserver = new IntersectionObserver( (entries) => {
-    entries.forEach( (entry) =>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show")
-        }
-        else{
-          entry.target.classList.remove('show')  
-        }
-    })
-})
-const elements = document.querySelectorAll('.hidden')
-
-elements.forEach( (element) => myObserver.observe(element))
-
-const competenciasObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show-competencias");
-        } else {
-            entry.target.classList.remove("show-competencias");
-        }
+// Função genérica para criar um IntersectionObserver e aplicar classes de animação
+function createObserver(elementsSelector, animationClass) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add(animationClass);
+            } else {
+                entry.target.classList.remove(animationClass);
+            }
+        });
     });
-});
 
-const competenciasElements = document.querySelectorAll('.hidden-competencias');
+    document.querySelectorAll(elementsSelector).forEach((element) => observer.observe(element));
+}
 
-competenciasElements.forEach((element) => competenciasObserver.observe(element));
+// Observadores para animações de seções específicas
+createObserver('.hidden', 'show');
+createObserver('.hidden-competencias', 'show-competencias');
+
