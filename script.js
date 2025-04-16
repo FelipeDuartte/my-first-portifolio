@@ -1,5 +1,3 @@
-
-// Função genérica para criar um IntersectionObserver e aplicar classes de animação
 function createObserver(elementsSelector, animationClass) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -17,4 +15,4 @@ function createObserver(elementsSelector, animationClass) {
 // Observadores para animações de seções específicas
 createObserver('.hidden', 'show');
 createObserver('.hidden-competencias', 'show-competencias');
-
+createObserver('.hidden-certificados', 'show-certificados');
