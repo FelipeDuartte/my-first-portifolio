@@ -13,7 +13,27 @@ createObserver('.hidden', 'show');
 createObserver('.hidden-competencias', 'show-competencias');
 createObserver('.hidden-certificados', 'show-certificados');
 
-// Lida com o envio do formulário de contato via Formspree
+// Função para enviar o formulário usando Formspree
+function createObserver(elementsSelector, animationClass) {
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add(animationClass);
+          } else {
+              entry.target.classList.remove(animationClass);
+          }
+      });
+  });
+
+  document.querySelectorAll(elementsSelector).forEach((element) => observer.observe(element));
+}
+
+// Observadores para animações de seções específicas
+createObserver('.hidden', 'show');
+createObserver('.hidden-competencias', 'show-competencias');
+createObserver('.hidden-certificados', 'show-certificados');
+
+// Função para enviar o formulário usando Formspree
 document.querySelector('.form-contato').addEventListener('submit', function(event) {
   event.preventDefault(); // Evita o envio padrão do formulário
 
