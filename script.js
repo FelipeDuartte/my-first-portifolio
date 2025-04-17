@@ -14,30 +14,26 @@ createObserver('.hidden-competencias', 'show-competencias');
 createObserver('.hidden-certificados', 'show-certificados');
 
 // Lida com o envio do formulário de contato via Formspree
-const contatoForm = document.querySelector('.form-contato');
+document.querySelector('.form-contato').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita o envio padrão do formulário
 
-if (contatoForm) {
-  contatoForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
+  const form = event.target;
 
-    const formData = new FormData(contatoForm);
+  // Coleta os dados do formulário
+  const formData = new FormData(form);
 
-    try {
-      const response = await fetch(contatoForm.action, {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        alert('Mensagem enviada com sucesso!');
-        contatoForm.reset();
-      } else {
-        alert('Ocorreu um erro ao enviar a mensagem. Verifique os dados e tente novamente.');
-        console.error('Erro ao enviar:', await response.text());
-      }
-    } catch (error) {
-      alert('Erro de conexão. Tente novamente mais tarde.');
-      console.error('Erro na requisição:', error);
-    }
+  // Envia os dados para o Formspree
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    mode: 'no-cors'  // Ignora o CORS
+  })
+  .then(() => {
+    alert('Mensagem enviada com sucesso!');
+    form.reset(); // Limpa os campos do formulário
+  })
+  .catch(error => {
+    alert('Ocorreu um erro ao tentar enviar a mensagem.');
+    console.error(error);
   });
-}
+});
