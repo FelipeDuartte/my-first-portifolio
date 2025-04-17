@@ -193,11 +193,12 @@ img.img-projeto {
         transition: transform 0.5s ease, box-shadow 0.3s ease;}
 
 /* Fim Projetos */
+
+/* começo certificados */
 .certificados {
   padding: 50px 20px;
   background-color: transparent;
-  text-align: center;
-}
+  text-align: center;}
 
 .certificados h1 {
   color: transparent;
@@ -207,15 +208,13 @@ img.img-projeto {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px;}
 
 .certificados-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
-}
+  gap: 30px;}
 
 .certificado-item {
   max-width: 300px;
@@ -226,17 +225,14 @@ img.img-projeto {
   margin: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
 .certificado-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-}
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);}
 
 .certificado-item.visible {
   transform: translateY(0);
-  opacity: 1;
-}
+  opacity: 1;}
 
 .certificado-placeholder {
   background: rgba(30, 30, 50, 0.7);
@@ -244,21 +240,18 @@ img.img-projeto {
   padding: 30px 20px;
   text-align: center;
   color: #ccc;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px;}
 
 .img-certificado {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
 
 .certificado-item p {
   font-size: 16px;
   color: #e0e0e0;
-  margin: 10px 0;
-}
+  margin: 10px 0;}
 
 .btn-download {
   background-color: #007bff;
@@ -268,12 +261,10 @@ img.img-projeto {
   border-radius: 8px;
   display: inline-block;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
+  transition: background-color 0.3s ease;}
 
 .btn-download:hover {
-  background-color: #0056b3;
-}
+  background-color: #0056b3;}
 
 .btn-download.disabled {
   background-color: #444;
@@ -283,12 +274,11 @@ img.img-projeto {
   border-radius: 6px;
   border: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+  transition: background-color 0.3s ease;}
 
 .btn-download.disabled:hover {
-  background-color: #555;
-}
+  background-color: #555;}
+/* começo certificados */
 /* seção Competências */
 #competencias {
   background-color: rgba(0, 0, 0, 0.7);

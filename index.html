@@ -133,13 +133,13 @@
         <div class="flex-row">
             <div class="projeto-estofado text-center">
                 <h2 class="p-0 display-3 fw-bold text-uppercase" id="projeto-estofado">Limpeza Estofados</h2>
-                <a href="https://felipeduartte.github.io/page-estofados/" target="_blank" class="hidden">
+                <a href="#" target="_blank" class="hidden">
                     <img src="video-img/page-estof.png" class="pulse hidden img-projeto" alt="Projeto Academia">
                 </a>
             </div>
             <div class="projeto-fastfood text-center">
                 <h2 class="p-0 display-3 fw-bold text-uppercase" id="projeto-fastfood">Fast-food</h2>
-                <a href="https://felipeduartte.github.io/page-food/" target="_blank" class="hidden">
+                <a href="#" target="_blank" class="hidden">
                     <img src="video-img/pge-food.png" class="pulse img-projeto hidden" alt="Projeto Academia">
                 </a>
         </div>
@@ -203,13 +203,13 @@
             </div>
         </div>
     </section>
-    <!--contato--><section id="contato" class="contato-section hidden">
+    <section id="contato" class="contato-section hidden">
         <h1 class="h1-contato">Entre em Contato</h1>
         <div class="contato-container">
-          <form class="form-contato">
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+          <form id="form-contato" class="form-contato" action="https://formspree.io/f/xrbpwgpe" method="POST">
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" id="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
             <button type="submit">Enviar</button>
           </form>
       
@@ -218,6 +218,9 @@
             <p><strong>Meu Tel:</strong> (31) 99945-0717</p>
           </div>
         </div>
+      
+        <!-- feedback da submissão -->
+        <p id="feedback"></p>
       </section>
 
       <footer class="footer">
