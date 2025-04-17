@@ -1,14 +1,19 @@
-function createObserver(selector, animationClass) {
+// Função para observar e adicionar animações quando os elementos entram na tela
+function createObserver(elementsSelector, animationClass) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      entry.target.classList.toggle(animationClass, entry.isIntersecting);
+      if (entry.isIntersecting) {
+        entry.target.classList.add(animationClass);
+      } else {
+        entry.target.classList.remove(animationClass);
+      }
     });
   });
 
-  document.querySelectorAll(selector).forEach((el) => observer.observe(el));
+  document.querySelectorAll(elementsSelector).forEach((element) => observer.observe(element));
 }
 
-// Ativa os observadores de animações
+// Observadores para animações de seções específicas
 createObserver('.hidden', 'show');
 createObserver('.hidden-competencias', 'show-competencias');
 createObserver('.hidden-certificados', 'show-certificados');
