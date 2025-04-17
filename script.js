@@ -1,66 +1,43 @@
-// Função para observar e adicionar animações quando os elementos entram na tela
-function createObserver(elementsSelector, animationClass) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add(animationClass);
-        } else {
-          entry.target.classList.remove(animationClass);
-        }
-      });
+function createObserver(selector, animationClass) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle(animationClass, entry.isIntersecting);
     });
-  
-    document.querySelectorAll(elementsSelector).forEach((element) => observer.observe(element));
-  }
-  
-  // Observadores para animações de seções específicas
-  createObserver('.hidden', 'show');
-  createObserver('.hidden-competencias', 'show-competencias');
-  createObserver('.hidden-certificados', 'show-certificados');
-  
-  // Função para enviar o formulário usando Formspree
-  function createObserver(elementsSelector, animationClass) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add(animationClass);
-            } else {
-                entry.target.classList.remove(animationClass);
-            }
-        });
-    });
+  });
 
-    document.querySelectorAll(elementsSelector).forEach((element) => observer.observe(element));
+  document.querySelectorAll(selector).forEach((el) => observer.observe(el));
 }
 
-// Observadores para animações de seções específicas
+// Ativa os observadores de animações
 createObserver('.hidden', 'show');
 createObserver('.hidden-competencias', 'show-competencias');
 createObserver('.hidden-certificados', 'show-certificados');
 
-// Função para enviar o formulário usando Formspree
-document.querySelector('.form-contato').addEventListener('submit', function(event) {
-  event.preventDefault();
+// Lida com o envio do formulário de contato via Formspree
+const contatoForm = document.querySelector('.form-contato');
 
-  const form = event.target;
+if (contatoForm) {
+  contatoForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-  const formData = new FormData(form);
+    const formData = new FormData(contatoForm);
 
-  fetch(form.action, {
-    method: 'POST',
-    body: formData,
-  })
-  .then(response => {
-    if (response.ok) {
-      alert('Mensagem enviada com sucesso!');
-      form.reset();
-    } else {
-      alert('Ocorreu um erro, tente novamente.');
+    try {
+      const response = await fetch(contatoForm.action, {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        alert('Mensagem enviada com sucesso!');
+        contatoForm.reset();
+      } else {
+        alert('Ocorreu um erro ao enviar a mensagem. Verifique os dados e tente novamente.');
+        console.error('Erro ao enviar:', await response.text());
+      }
+    } catch (error) {
+      alert('Erro de conexão. Tente novamente mais tarde.');
+      console.error('Erro na requisição:', error);
     }
-  })
-  .catch(error => {
-    alert('Ocorreu um erro ao tentar enviar a mensagem.');
-    console.error(error);
   });
-});
-
+}
