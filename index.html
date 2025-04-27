@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--link locais-->
     <link rel="stylesheet" href="./estilo/style.css">
-    <title>Portifólio</title>
-    <video autoplay loop muted playsinline class="p-0">  <!--video galaxia-->
+    <title>Portfólio</title>
+</head>
+<body class="container-fluid d-flex p-0 m-0 ">
+    <video autoplay loop muted playsinline class="p-0" alt="Vídeo de uma galáxia em movimento">  <!--video galaxia-->
         <source src="video-img/space.mp4" type="video/mp4">
     </video>
 
-</head>
-<body class="container-fluid d-flex p-0 m-0 ">
     <div class="container-fluid p-0 m-0">
    <!--navegação--> <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container d-flex justify-content-center p-0">
@@ -27,23 +27,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link text-white me-4" href="#principal">Principal</a></li>
-                    <li class="nav-item"><a class="nav-link text-white me-4" href="#sobre mim">Sobre mim</a></li>
+                    <li class="nav-item"><a class="nav-link text-white me-4" href="#sobre-mim">Sobre mim</a></li>
                     <li class="nav-item"><a class="nav-link text-white me-4" href="#certificados">Certificados</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#projetos">Projetos</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-    
-    <!--cabeçalho principal--><div class="container-fluid p-0 m-0 d-flex align-items-center justify-content-center">
-        <header class="container-fluid d-flex flex-column align-items-center justify-content-center mb-5 p-0 row" id="principal">
+    </nav>  
+    <!--header principal--><div class="container-fluid p-0 m-0 d-flex align-items-center justify-content-center">
+    <header class="container-fluid d-flex flex-column align-items-center justify-content-center mb-5 p-0 row" id="principal">
             <section class="d-flex align-items-center justify-content-center p-0 m-0 w100">
                 <div>
                     <p class="d-flex m-0 position-relative justify-content-center text-white " id="presentation">Opa ! <span class="bi bi-emoji-wink-fill"></span>, meu nome é</p>
         
                     <div><h1 class="col-12 m-0 size-developer">Felipe Duarte</h1></div>
         
-                                        <nav class="col d-flex align-items-center justify-content-center ">
+                                        <nav class="col d-flex align-items-center justify-content-center">
                                             <a href="" class="text-white"><span class="bi bi-github me-3" id="icons-glt"></span></a>
                                             <a href="" class="text-primary"><span class="bi bi-linkedin me-3" id="icons-glt"></span></a>
                                             <a href="" class="text-secondary"><span class="bi bi-tiktok" id="icons-glt"></span></a>
@@ -51,17 +50,16 @@
                 </div>  <!--div frontend e links das redes sociais-->
         </div>
     </div>
-
     </section>
     <div class="p-0 m-0 d-flex align-items-center justify-content-center"><span class="bi bi-arrow-down-short position-absolute p-0" id="down-arrow"></span><!--icon seta para baixo--></div>
     </header>
 
-    <!--Sobre mim--><section class="d-flex  justify-content-center m-0 p-0 about-me" id="sobre mim">
+    <!--Sobre mim--><section class="d-flex  justify-content-center m-0 p-0 about-me" id="sobre-mim">
         <article class="container-fluid d-flex justify-content-center p-0" id="article-about-me">
     
             <div>
                 <p class="fw-bold col-12 d-flex align-items-center justify-content-center" id="p1-about-me">Conheça um pouco</p>
-                <h1 class="fw-bold text-uppercase col-12 d-flex align-items-center justify-content-center hidden" id="h1-about-me">Sobre mim</h1>
+                <h1 class="text-uppercase col-12 d-flex align-items-center justify-content-center hidden" id="h1-about-me">Sobre mim</h1>
             </div>
     
             <div class="my-picture mb-3"><img src="video-img/my-picture.jpeg" alt="my-picture" class="img-fluid p-0 d-flex rounded-5 hidden img-about-me"></div>
@@ -95,7 +93,7 @@
             
             <div class="certificado-item hidden-certificados mx-2 my-3">
                 <div class="certificado-placeholder text-center">
-                    <img src="video-img/Felipe-Duarte-de-Oliveira-Javascript-40-Horas-Certificado-Curso-em-Video_page-0001.jpg" alt="Certificado Domínio da Língua Inglesa" class="img-fluid img-certificado" id="certificado-ingles">
+                    <img src="video-img/Felipe-Duarte-de-Oliveira-Javascript-40-Horas-Certificado-Curso-em-Video_page-0001.jpg" alt="JavaScript Avançado" class="img-fluid img-certificado" id="certificado-Javascript">
                 </div>
                 <p class="fw-bold">JavaScript Avançado</p>
                 <a class="btn-download" href="video-img/Felipe-Duarte-de-Oliveira-Javascript-40-Horas-Certificado-Curso-em-Video.pdf" target="_blank">Baixar Certificado</a>
@@ -103,10 +101,10 @@
     
             <div class="certificado-item hidden-certificados mx-2 my-3">
                 <div class="certificado-placeholder text-center">
-                    <p>Certificado em breve</p>
+                    <img src="video-img/Felipe-Duarte-de-Oliveira-Curso-HTML5-e-CSS3-modulo-1-de-5-40-HORAS-Certificado-Curso-em-Video_page-0001.jpg" alt="HTML/CSS Avançado" class="img-fluid img-certificado" id="certificado-HTML-css">
                 </div>
-                <p class="fw-bold">CSS/HTML Avançado</p>
-                <a class="btn-download disabled" href="#" onclick="return false;">Indisponível</a>
+                <p class="fw-bold">HTML/CSS Avançado</p>
+                <a class="btn-download" href="video-img/Felipe-Duarte-de-Oliveira-Curso-HTML5-e-CSS3-modulo-1-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank">Baixar Certificado</a>
             </div>
 
             <div class="certificado-item hidden-certificados mx-2 my-3">
@@ -125,13 +123,13 @@
             <div class="projeto-estofado text-center">
                 <h2 class="p-0 display-3 fw-bold text-uppercase" id="projeto-estofado">Limpeza Estofados</h2>
                 <a href="https://felipeduartte.github.io/page-estofados/" target="_blank" class="hidden">
-                    <img src="video-img/page-estof.png" class="pulse hidden img-projeto" alt="Projeto Academia">
+                    <img src="video-img/page-estof.png" class="pulse hidden img-projeto" alt="projeto estofado">
                 </a>
             </div>
             <div class="projeto-fastfood text-center">
                 <h2 class="p-0 display-3 fw-bold text-uppercase" id="projeto-fastfood">Fast-food</h2>
                 <a href="#" target="_blank" class="hidden">
-                    <img src="video-img/pge-food.png" class="pulse img-projeto hidden" alt="Projeto Academia">
+                    <img src="video-img/pge-food.png" class="pulse img-projeto hidden" alt="projeto fastfood">
                 </a>
         </div>
     </section>
