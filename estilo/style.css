@@ -293,8 +293,8 @@ img.img-projeto {
   padding: 60px 0px;}
 
 #competencias .col {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);}
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);}
 
 .h1-competencia {
   color: transparent;
@@ -336,7 +336,6 @@ img.img-projeto {
   margin-bottom: 10px;}
 
 .pcard {
-  display: none;
   font-size: 0.9em;
   margin-top: 10px;}
 
@@ -532,7 +531,6 @@ div.flex-row{
 /* Fim certificados */
 /* começo competencias */
 div > p.pcard{
-  display: block;
   width: 99%;
   line-height: 25px;
   font-size: 1em;
