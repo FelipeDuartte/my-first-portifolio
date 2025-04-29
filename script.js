@@ -59,3 +59,12 @@ document.getElementById('scrollToTop').addEventListener('click', function (e) {
     behavior: 'smooth' // Suaviza a rolagem para o topo
   });
 });
+
+window.addEventListener('load', () => {
+  const video = document.querySelector('video');
+  if (video) {
+    video.play().catch(error => {
+      console.log('Autoplay bloqueado:', error);
+    });
+  }
+});
