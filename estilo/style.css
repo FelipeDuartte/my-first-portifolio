@@ -3,7 +3,6 @@
 /* Estilos para telas menores*/  
 
 html, body {
-  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -12,7 +11,7 @@ body{
   font-family: 'kanit' , sans-serif;
   }
 
-video{ 
+body > div > video{ 
   width: 100%;
   height: 100%;
   object-fit: cover;
