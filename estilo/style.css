@@ -3,13 +3,12 @@
 /* Estilos para telas menores*/  
 
 html, body {
-  max-width: 100%;
-}
+  overflow-x: hidden;
+  max-width: 100%;}
 
 body{
   flex-direction: column;
-  font-family: 'kanit' , sans-serif;
-  }
+  font-family: 'kanit' , sans-serif;}
 
 body > div > video{ 
   width: 100%;
