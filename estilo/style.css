@@ -57,7 +57,7 @@ body > div > video{
 /* começo Header */
 header{ 
   min-height: 100vh;
-  color: #a9a9a9; }
+  color: #a9a9a9;}
 
 p#presentation{ 
     font-size: 1em;
@@ -506,15 +506,15 @@ img.img-projeto {
 @keyframes iconPulse {
   0% {
     transform: scale(1);
-    opacity: 0.8;
+    opacity: 0.7;
   }
   50% {
-    transform: scale(1.05);
-    opacity: 1.1;
+    transform: scale(1.07);
+    opacity: 1.4;
   }
   100% {
     transform: scale(1);
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
   /* Animação de pulsar para section projetos */
