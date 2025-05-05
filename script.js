@@ -60,11 +60,10 @@ document.getElementById('scrollToTop').addEventListener('click', function (e) {
   });
 });
 
-window.addEventListener('load', () => {
-  const video = document.querySelector('video');
-  if (video) {
-    video.play().catch(error => {
-      console.log('Autoplay bloqueado:', error);
-    });
-  }
+window.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("background-video");
+  video.muted = true; // redundância para garantir
+  video.play().catch(error => {
+    console.warn("Autoplay falhou:", error);
+  });
 });
