@@ -68,3 +68,9 @@ window.addEventListener('load', () => {
     });
   }
 });
+const video = document.getElementById('background-video');
+video.addEventListener('loadedmetadata', () => {
+    if (video.currentTime < 1) {
+        video.currentTime = 1;
+    }
+});
