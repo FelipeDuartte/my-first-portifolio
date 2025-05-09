@@ -60,13 +60,6 @@ document.getElementById('scrollToTop').addEventListener('click', function (e) {
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("background-video");
-  video.muted = true; // redundância para garantir
-  video.play().catch(error => {
-    console.warn("Autoplay falhou:", error);
-  });
-});
 const canvas = document.getElementById("stars-canvas");
     const ctx = canvas.getContext("2d");
     let stars = [];
