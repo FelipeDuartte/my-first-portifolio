@@ -24,6 +24,11 @@ body{
       z-index: -1;
 }
 
+.content {
+      position: relative;
+      z-index: 1;
+      padding-top: 40vh;}
+
 .navbar-brand {
     font-weight: 500;}
 
@@ -114,7 +119,7 @@ p#about-me{
 #h1-about-me{
               transition-delay: 400ms;
               color: #8E8179;
-              top: 220%;
+              top: 100%;
             font-size: 2em;}
 
 img.img-about-me{
